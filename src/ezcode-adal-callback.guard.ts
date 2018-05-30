@@ -13,7 +13,7 @@ export class EZCodeAdalCallbackGuard implements CanActivate {
         this.adalService.handleCallback();
 
         if (this.adalService.userInfo) {
-            this.router.navigate(['']);
+            this.router.navigate(['/admin/pump-archive']);
             // var returnUrl = route.queryParams['returnUrl'];
             // if (!returnUrl) {
             //     this.router.navigate(['']);
